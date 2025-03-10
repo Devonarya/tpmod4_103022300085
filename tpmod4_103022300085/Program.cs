@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+/*using System.Collections.Generic;
 
 class KodePos
 {
@@ -45,3 +45,62 @@ class Program
         Console.WriteLine($"Kode Pos {input}: {KodePos.GetKodePos(input)}");
     }
 }
+
+
+public enum DoorState
+{
+    Terkunci,
+    Terbuka
+}
+
+public class DoorMachine
+{
+    private DoorState state;
+
+    public DoorMachine()
+    {
+        state = DoorState.Terkunci;
+        Console.WriteLine("Pintu terkunci");
+    }
+
+    public void KunciPintu()
+    {
+        if (state == DoorState.Terkunci)
+        {
+            Console.WriteLine("Pintu sudah terkunci");
+        }
+        else
+        {
+            state = DoorState.Terkunci;
+            Console.WriteLine("Pintu terkunci");
+        }
+    }
+
+    public void BukaPintu()
+    {
+        if (state == DoorState.Terbuka)
+        {
+            Console.WriteLine("Pintu sudah terbuka");
+        }
+        else
+        {
+            state = DoorState.Terbuka;
+            Console.WriteLine("Pintu tidak terkunci");
+        }
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        DoorMachine pintu = new DoorMachine();
+
+        Console.WriteLine("\nMenekan tombol buka...");
+        pintu.BukaPintu();
+
+        Console.WriteLine("\nMenekan tombol kunci...");
+        pintu.KunciPintu();
+    }
+}
+*/
